@@ -1,0 +1,65 @@
+[{
+    "key": "ctrl+cmd+l",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "f10",
+    "command": "code-runner.run"
+},
+{
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+},
+{
+    "key": "f9",
+    "command": "code-runner.stop"
+},
+{
+    "key": "ctrl+alt+m",
+    "command": "-code-runner.stop"
+},
+{
+    "key": "ctrl+cmd+p",
+    "command": "python.setInterpreter"
+},
+{
+    "key": "ctrl+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "cmd+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+},
+{
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+},
+{
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleActivityBarVisibility"
+},
+{
+    "key": "ctrl+l",
+    "command": "workbench.files.action.focusFilesExplorer"
+},
+{
+    "key": "ctrl+h",
+    "command": "workbench.action.focusFirstEditorGroup"
+},
+{
+    "key": "cmd+1",
+    "command": "-workbench.action.focusFirstEditorGroup"
+}
+]

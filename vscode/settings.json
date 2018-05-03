@@ -1,0 +1,229 @@
+{
+  "editor.letterSpacing": 0.25,
+  "window.zoomLevel": 1,
+  "editor.fontSize": 15,
+  "editor.fontWeight": "400",
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "Iosevka",
+  "editor.lineHeight": 21,
+  // Vim settings
+  "editor.cursorBlinking": "solid",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.overrideCopy": false,
+  "vim.autoindent": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  // "vim.foldfix": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.leader": " ",
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "/"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": ":nohl"
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": ":w"
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "q"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": ":q"
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.formatDocument"
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "n"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.toggleSidebarVisibility"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.nextEditor"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.previousEditor"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "1",
+        "6",
+        "j"
+      ],
+      "commands": []
+    },
+    {
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "y",
+        "$"
+      ],
+      "commands": []
+    },
+    {
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "1",
+        "6",
+        "k"
+      ],
+      "commands": []
+    },
+    {
+      "before": [
+        "z",
+        "v"
+      ],
+      "after": [
+        "z",
+        "o"
+      ]
+    },
+    {
+      "before": [
+        "U"
+      ],
+      "after": [
+        "<C-r>"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        ":"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    }
+  ],
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true,
+  "workbench.colorCustomizations": {
+    "editorCursor.background": "#002b36",
+    "editorCursor.foreground": "#839496",
+    "editor.background": "#002833"
+  },
+  "workbench.colorTheme": "Solarized Dark",
+  "editor.autoClosingBrackets": true,
+  "workbench.activityBar.visible": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "prettier.singleQuote": true,
+  "prettier.eslintIntegration": true,
+  "explorer.openEditors.visible": 0,
+  "editor.minimap.enabled": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "explorer.confirmDelete": false,
+  "trailing-spaces.trimOnSave": true,
+  "latex-workshop.chktex.enabled": false,
+  "latex-workshop.view.pdf.viewer": "browser",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.enablePreview": false
+}
