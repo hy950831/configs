@@ -18,185 +18,111 @@
   // "vim.foldfix": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "k",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": [ "k", "j" ],
+      "after": [ "<Esc>" ]
     }
   ],
-  "vim.leader": " ",
+  "vim.leader": "<space>",
   "vim.otherModesKeyBindingsNonRecursive": [
     {
-      "before": [
-        "leader",
-        "/"
-      ],
+      "before": [ "leader", "/" ],
       "after": [],
-      "commands": [
-        {
-          "command": ":nohl"
-        }
-      ]
+      "commands": [ { "command": ":nohl" } ]
     },
     {
-      "before": [
-        "leader",
-        "w"
-      ],
+      "before": [ "leader", "l", "r" ],
       "after": [],
-      "commands": [
-        {
-          "command": ":w"
-        }
-      ]
+      "commands": [ { "command": "editor.action.rename" } ]
     },
     {
-      "before": [
-        "leader",
-        "q"
-      ],
+      "before": [ "leader", "l", "f" ],
       "after": [],
-      "commands": [
-        {
-          "command": ":q"
-        }
-      ]
+      "commands": [ { "command": "editor.action.quickFix" } ]
     },
     {
-      "before": [
-        "leader",
-        "l"
-      ],
+      "before": [ "leader", "f" ],
       "after": [],
-      "commands": [
-        {
-          "command": "editor.action.formatDocument"
-        }
-      ]
+      "commands": [ { "command": "workbench.action.findInFiles" } ]
     },
     {
-      "before": [
-        "leader",
-        "n"
-      ],
+      "before": [ "leader", "w" ],
       "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.toggleSidebarVisibility"
-        }
-      ]
+      "commands": [ { "command": ":w" } ]
     },
     {
-      "before": [
-        "<C-j>"
-      ],
+      "before": [ "leader", "q" ],
       "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.nextEditor"
-        }
-      ]
+      "commands": [ { "command": ":q" } ]
     },
     {
-      "before": [
-        "<C-k>"
-      ],
+      "before": [ "leader", "m" ],
       "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.previousEditor"
-        }
-      ]
+      "commands": [ { "command": "editor.action.formatDocument" } ]
     },
     {
-      "before": [
-        "<C-d>"
-      ],
-      "after": [
-        "1",
-        "6",
-        "j"
-      ],
+      "before": [ "leader", "p" ],
+      "after": [],
+      "commands": [ { "command": "workbench.action.quickOpen" } ]
+    },
+    {
+      "before": [ "leader", "n" ],
+      "after": [],
+      "commands": [ { "command": "workbench.action.toggleSidebarVisibility" } ]
+    },
+    {
+      "before": [ "<C-j>" ],
+      "after": [],
+      "commands": [ { "command": "workbench.action.nextEditor" } ]
+    },
+    {
+      "before": [ "<C-k>" ],
+      "after": [],
+      "commands": [ { "command": "workbench.action.previousEditor" } ]
+    },
+    {
+      "before": [ "<C-d>" ],
+      "after": [ "1", "6", "j" ],
       "commands": []
     },
     {
-      "before": [
-        "Y"
-      ],
-      "after": [
-        "y",
-        "$"
-      ],
+      "before": [ "Y" ],
+      "after": [ "y", "$" ],
       "commands": []
     },
     {
-      "before": [
-        "<C-u>"
-      ],
-      "after": [
-        "1",
-        "6",
-        "k"
-      ],
+      "before": [ "<C-u>" ],
+      "after": [ "1", "6", "k" ],
       "commands": []
     },
     {
-      "before": [
-        "z",
-        "v"
-      ],
-      "after": [
-        "z",
-        "o"
-      ]
+      "before": [ "z", "v" ],
+      "after": [ "z", "o" ]
     },
     {
-      "before": [
-        "U"
-      ],
-      "after": [
-        "<C-r>"
-      ]
+      "before": [ "U" ],
+      "after": [ "<C-r>" ]
     },
     {
-      "before": [
-        "leader",
-        "w"
-      ],
+      "before": [ "leader", "w" ],
       "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.files.save",
-          "args": []
-        }
-      ]
+      "commands": [ { "command": "workbench.action.files.save", "args": [] } ]
     },
     {
-      "before": [
-        ";"
-      ],
-      "after": [
-        ":"
-      ]
+      "before": [ "leader", "r" ],
+      "after": [],
+      "commands": [ { "command": "code-runner.run", "args": [] } ]
     },
     {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "$"
-      ]
+      "before": [ ";" ],
+      "after": [ ":" ]
     },
     {
-      "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
+      "before": [ "L" ],
+      "after": [ "$" ]
+    },
+    {
+      "before": [ "H" ],
+      "after": [ "^" ]
     }
   ],
   "workbench.sideBar.location": "right",
@@ -220,10 +146,16 @@
   "editor.minimap.enabled": false,
   "editor.acceptSuggestionOnEnter": "off",
   "explorer.confirmDelete": false,
-  "trailing-spaces.trimOnSave": true,
   "latex-workshop.chktex.enabled": false,
   "latex-workshop.view.pdf.viewer": "browser",
   "workbench.statusBar.feedback.visible": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.enablePreview": false
+  "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home",
+  "workbench.editor.enablePreview": false,
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": [
+    "pseudocode"
+  ],
+  "languageServerHaskell.useCustomHieWrapperPath": "~/hie-wrapper.sh",
+  "languageServerHaskell.useHieWrapper": true
 }
