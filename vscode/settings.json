@@ -1,12 +1,12 @@
 {
-  "editor.letterSpacing": 0.25,
+  "editor.letterSpacing": 0.05,
   "window.zoomLevel": 1,
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.fontWeight": "400",
   "editor.wordWrap": "on",
   "editor.lineNumbers": "relative",
   "editor.fontFamily": "Iosevka",
-  "editor.lineHeight": 21,
+  "editor.lineHeight": 20,
   // Vim settings
   "editor.cursorBlinking": "solid",
   "vim.easymotion": true,
@@ -14,6 +14,7 @@
   "vim.overrideCopy": false,
   "vim.autoindent": true,
   "vim.useCtrlKeys": true,
+  "vim.enableNeovim": true,
   "vim.hlsearch": true,
   // "vim.foldfix": true,
   "vim.insertModeKeyBindings": [
@@ -75,6 +76,11 @@
       "commands": [ { "command": "workbench.action.toggleSidebarVisibility" } ]
     },
     {
+      "before": [ "leader", "c", "c" ],
+      "after": [ "g", "c", "c" ],
+      "commands": []
+    },
+    {
       "before": [ "<C-j>" ],
       "after": [],
       "commands": [ { "command": "workbench.action.nextEditor" } ]
@@ -133,11 +139,9 @@
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
   "workbench.colorCustomizations": {
-    "editorCursor.background": "#002b36",
+    "editorCursor.background": "#062029",
     "editorCursor.foreground": "#839496",
-    "editor.background": "#002833"
   },
-  "workbench.colorTheme": "Solarized Dark",
   "editor.autoClosingBrackets": true,
   "workbench.activityBar.visible": false,
   "editor.renderWhitespace": "none",
@@ -162,5 +166,7 @@
     "pseudocode"
   ],
   "languageServerHaskell.useCustomHieWrapperPath": "~/hie-wrapper.sh",
-  "languageServerHaskell.useHieWrapper": true
+  "languageServerHaskell.useHieWrapper": true,
+  "workbench.colorTheme": "Braver's Solarized Dark (themed workbench)",
+  "workbench.iconTheme": "material-icon-theme"
 }
