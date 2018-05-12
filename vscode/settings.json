@@ -30,6 +30,11 @@
       "commands": [ { "command": ":nohl" } ]
     },
     {
+      "before": [ "leader", "." ],
+      "after": [],
+      "commands": [ { "command": "workbench.action.showAllSymbols" } ]
+    },
+    {
       "before": [ "leader", "l", "r" ],
       "after": [],
       "commands": [ { "command": "editor.action.rename" } ]
