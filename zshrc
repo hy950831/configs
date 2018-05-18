@@ -68,14 +68,16 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
-export PATH=~/bin:${GOPATH//://bin}:$PATH
+export PATH=~/bin:/usr/local/bin:${GOPATH//://bin}:$PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='vim'
+export EDITOR='nvim'
+alias vi=vim
+alias vim=nvim
 # else
 #   export EDITOR='mvim'
 # fi
@@ -100,8 +102,15 @@ alias 'runlinux'='docker start hyman&& docker exec -it hyman zsh'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 alias ag='ag --path-to-ignore ~/.ignore'
+alias ssd2='cd /Volumes/SSD2'
+alias gdb-os=gdbgui -g os161-gdb kernel
 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/Developer/NVIDIA/CUDA-9.1/bin:$PATH"
 export DYLD_LIBRARY_PATH="/Developer/NVIDIA/CUDA-9.1/lib:$DYLD_LIBRARY_PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cabal/bin:$PATH"
 
+# Highlighting config
+ZSH_HIGHLIGHT_STYLES[path]='none'
+export PATH="/usr/local/sbin:$PATH"
