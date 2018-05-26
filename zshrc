@@ -103,7 +103,7 @@ alias 'runlinux'='docker start hyman&& docker exec -it hyman zsh'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 alias ag='ag --path-to-ignore ~/.ignore'
 alias ssd2='cd /Volumes/SSD2'
-alias gdb-os=gdbgui -g os161-gdb kernel
+alias gdb-os='gdbgui -g os161-gdb kernel'
 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/Developer/NVIDIA/CUDA-9.1/bin:$PATH"
