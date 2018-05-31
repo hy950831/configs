@@ -167,6 +167,6 @@
   ],
   "languageServerHaskell.useCustomHieWrapperPath": "~/hie-wrapper.sh",
   "languageServerHaskell.useHieWrapper": true,
-  "workbench.colorTheme": "Braver's Solarized Dark (themed workbench)",
+  "workbench.colorTheme": "Solarized Dark",
   "workbench.iconTheme": "material-icon-theme"
 }
