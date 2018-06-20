@@ -1,7 +1,7 @@
 {
   "editor.letterSpacing": 0.05,
   "window.zoomLevel": 1,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.fontWeight": "400",
   "editor.wordWrap": "on",
   "editor.lineNumbers": "relative",
@@ -24,7 +24,7 @@
     }
   ],
   "vim.leader": "<space>",
-  "vim.otherModesKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindings": [
     {
       "before": [ "leader", "/" ],
       "after": [],
@@ -91,18 +91,8 @@
       "commands": [ { "command": "workbench.action.previousEditor" } ]
     },
     {
-      "before": [ "<C-d>" ],
-      "after": [ "1", "6", "j" ],
-      "commands": []
-    },
-    {
       "before": [ "Y" ],
       "after": [ "y", "$" ],
-      "commands": []
-    },
-    {
-      "before": [ "<C-u>" ],
-      "after": [ "1", "6", "k" ],
       "commands": []
     },
     {
@@ -141,6 +131,14 @@
   "workbench.colorCustomizations": {
     "editorCursor.background": "#062029",
     "editorCursor.foreground": "#839496",
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.class": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
   },
   "editor.autoClosingBrackets": true,
   "workbench.activityBar.visible": false,

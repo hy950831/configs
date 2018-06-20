@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 rm ~/Library/Application\ Support/Code/User/settings.json
 rm ~/Library/Application\ Support/Code/User/keybindings.json
 ln settings.json ~/Library/Application\ Support/Code/User/settings.json

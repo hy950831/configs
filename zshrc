@@ -75,9 +75,9 @@ export PATH=~/bin:/usr/local/bin:${GOPATH//://bin}:$PATH
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='nvim'
+export EDITOR='vim'
 alias vi=vim
-alias vim=nvim
+# alias vim=nvim
 # else
 #   export EDITOR='mvim'
 # fi
@@ -96,7 +96,7 @@ alias dif=icdiff
 alias prologt='swipl --traditional'
 alias prolog='swipl'
 # export JAVA_TOOL_OPTIONS=-Duser.language=en
-# export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home'
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home'
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias 'runlinux'='docker start hyman&& docker exec -it hyman zsh'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -104,6 +104,7 @@ export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 alias ag='ag --path-to-ignore ~/.ignore'
 alias ssd2='cd /Volumes/SSD2'
 alias gdb-os='gdbgui -g os161-gdb kernel'
+alias py='pypy3'
 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/Developer/NVIDIA/CUDA-9.1/bin:$PATH"
