@@ -75,8 +75,9 @@ export PATH=~/bin:/usr/local/bin:${GOPATH//://bin}:$PATH
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='vim'
+export EDITOR='nvim'
 alias vi=vim
+alias f=vim
 # alias vim=nvim
 # else
 #   export EDITOR='mvim'
@@ -107,10 +108,15 @@ alias gdb-os='gdbgui -g os161-gdb kernel'
 alias py='pypy3'
 
 export PATH="/usr/local/opt/node@8/bin:$PATH"
-export PATH="/Developer/NVIDIA/CUDA-9.1/bin:$PATH"
-export DYLD_LIBRARY_PATH="/Developer/NVIDIA/CUDA-9.1/lib:$DYLD_LIBRARY_PATH"
+# export PATH="/Developer/NVIDIA/CUDA-9.0/bin:$PATH"
+# export DYLD_LIBRARY_PATH="/Developer/NVIDIA/CUDA-9.0/lib:$DYLD_LIBRARY_PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
+
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
+export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
+export PATH=$DYLD_LIBRARY_PATH:$PATH:/Developer/NVIDIA/CUDA-9.0/bin
 
 # Highlighting config
 ZSH_HIGHLIGHT_STYLES[path]='none'

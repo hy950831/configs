@@ -1,4 +1,48 @@
 {
+  // Python settings
+  "python.pythonPath": "/usr/local/bin/python3",
+  "editor.fontLigatures": true,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "/usr/local/bin/python3 -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run"
+  },
   "editor.letterSpacing": 0.05,
   "window.zoomLevel": 1,
   "editor.fontSize": 15,
@@ -24,7 +68,17 @@
     }
   ],
   "vim.leader": "<space>",
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [ "<cr>" ],
+      "after": ["g", "b"]
+    }
+  ],
   "vim.normalModeKeyBindings": [
+    {
+      "before": [ "<cr>" ],
+      "after": ["g", "b"]
+    },
     {
       "before": [ "leader", "/" ],
       "after": [],
@@ -41,7 +95,7 @@
       "commands": [ { "command": "editor.action.rename" } ]
     },
     {
-      "before": [ "leader", "l", "f" ],
+      "before": [ "leader", "l", "a" ],
       "after": [],
       "commands": [ { "command": "editor.action.quickFix" } ]
     },
@@ -81,12 +135,20 @@
       "commands": []
     },
     {
-      "before": [ "<C-j>" ],
+      "before": [ "<C-d>" ],
+      "after": ["1", "6", "j"]
+    },
+    {
+      "before": [ "<C-u>" ],
+      "after": ["1", "6", "k"]
+    },
+    {
+      "before": [ "<right>" ],
       "after": [],
       "commands": [ { "command": "workbench.action.nextEditor" } ]
     },
     {
-      "before": [ "<C-k>" ],
+      "before": [ "<left>" ],
       "after": [],
       "commands": [ { "command": "workbench.action.previousEditor" } ]
     },
@@ -140,7 +202,6 @@
     "**/CVS": true,
     "**/.DS_Store": true
   },
-  "editor.autoClosingBrackets": true,
   "workbench.activityBar.visible": false,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
@@ -163,8 +224,13 @@
   "cSpell.userWords": [
     "pseudocode"
   ],
-  "languageServerHaskell.useCustomHieWrapperPath": "~/hie-wrapper.sh",
-  "languageServerHaskell.useHieWrapper": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Args": [
+    "--ignore=E114,E116,E131,E722",
+    "--max-line-length=120"
+  ],
+  "languageServerHaskell.hieExecutablePath": "hie-wrapper",
   "workbench.colorTheme": "Solarized Dark",
   "workbench.iconTheme": "material-icon-theme"
 }

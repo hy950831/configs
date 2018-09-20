@@ -61,5 +61,9 @@
 {
     "key": "cmd+1",
     "command": "-workbench.action.focusFirstEditorGroup"
+},
+{
+    "key": "cmd+h",
+    "command": "workbench.action.terminal.focus"
 }
 ]
