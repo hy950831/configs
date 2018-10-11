@@ -65,5 +65,13 @@
 {
     "key": "cmd+h",
     "command": "workbench.action.terminal.focus"
+},
+{
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm"
+},
+{
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
 }
 ]

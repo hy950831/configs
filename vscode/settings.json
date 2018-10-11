@@ -195,12 +195,14 @@
     "editorCursor.foreground": "#839496",
   },
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
+    "**/__pycache__": true,
     "**/.class": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
     "**/CVS": true,
-    "**/.DS_Store": true
+    "**/venv": true
   },
   "workbench.activityBar.visible": false,
   "editor.renderWhitespace": "none",
