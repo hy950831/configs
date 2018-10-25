@@ -60,7 +60,7 @@
   "vim.useCtrlKeys": true,
   "vim.enableNeovim": true,
   "vim.hlsearch": true,
-  // "vim.foldfix": true,
+  //"vim.foldfix": true,
   "vim.insertModeKeyBindings": [
     {
       "before": [ "k", "j" ],
@@ -208,9 +208,9 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "workbench.startupEditor": "newUntitledFile",
+  "vetur.format.defaultFormatter.css": "prettier",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "prettier.singleQuote": true,
+  "vetur.format.defaultFormatter.html": "prettyhtml",
   "prettier.eslintIntegration": true,
   "explorer.openEditors.visible": 0,
   "editor.minimap.enabled": false,
