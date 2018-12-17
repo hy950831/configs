@@ -63,6 +63,8 @@ plugins=(git z brew)
 
 source $ZSH/oh-my-zsh.sh
 
+fpath+=~/.zfunc
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -94,14 +96,17 @@ alias f=vim
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias dif=icdiff
-alias prologt='swipl --traditional'
 alias prolog='swipl'
+
 # export JAVA_TOOL_OPTIONS=-Duser.language=en
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home'
+
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias 'runlinux'='docker start hyman&& docker exec -it hyman zsh'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
 alias ag='ag --path-to-ignore ~/.ignore'
 alias ssd2='cd /Volumes/SSD2'
 alias gdb-os='gdbgui -g os161-gdb kernel'
@@ -121,3 +126,22 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH:/Developer/NVIDIA/CUDA-9.0/bin
 # Highlighting config
 ZSH_HIGHLIGHT_STYLES[path]='none'
 export PATH="/usr/local/sbin:$PATH"
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
+
+
+alias container='make -C /Users/hyman/Documents/projects/seL4/seL4-CAmkES-L4v-dockerfiles user HOST_DIR=$(pwd)'
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export PATH="/usr/local/opt/binutils/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+alias cr="cargo run"
+alias cb="cargo build"
+alias cbr="cargo build --release"

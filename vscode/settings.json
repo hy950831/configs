@@ -234,5 +234,23 @@
   ],
   "languageServerHaskell.hieExecutablePath": "hie-wrapper",
   "workbench.colorTheme": "Solarized Dark",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "search.runInExtensionHost": true,
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": [
+     "TODO",
+     "FIXME",
+     "NOTE"
+    ],
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.c",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+  ]
 }
